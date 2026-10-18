@@ -19,7 +19,7 @@ React (Vite) · Tailwind CSS · Lucide React
 
 ## Run locally
 ```bash
-git clone https://github.com/<your-username>/ironforge-gym.git
+git clone https://github.com/keshavmishrasde/ironforge-gym.git
 cd ironforge-gym
 npm install
 npm run dev
