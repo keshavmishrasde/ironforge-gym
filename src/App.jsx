@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./components/First/Navbar";
 import Hero from "./components/First/hero";
 import Stats from "./components/First/Stats";
+import Programs from "./components/second/Programs";
+import Trainer from "./components/second/Trainers";
 
 const App = () => {
   return (
@@ -9,6 +11,8 @@ const App = () => {
       <Navbar />
       <Hero />
       <Stats />
+      <Programs />
+      <Trainer />
     </div>
   );
 };
