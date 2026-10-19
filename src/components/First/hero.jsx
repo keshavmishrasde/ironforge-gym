@@ -2,16 +2,12 @@ import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import atheleteImage from "../../assets/athelet.jpg";
 
-const stats = [
-  { value: "2000+", label: "Members" },
-  { value: "25", label: "Trainers" },
-  { value: "10", label: "Years" },
-  { value: "50+", label: "Classes/Week" },
-];
-
 const HeroandStats = () => {
   return (
-    <section className="w-full bg-[#1A1A1D] px-4 py-8 text-white md:px-8 md:py-12 lg:px-16 lg:py-16">
+    <section
+      id="home"
+      className="w-full scroll-mt-16 md:scroll-mt-20 bg-[#1A1A1D] px-4 py-8 text-white md:px-8 md:py-12 lg:px-16 lg:py-16"
+    >
       <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:items-center lg:gap-16">
         <div className="flex flex-col gap-5 md:gap-6">
           <p className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-widest text-zinc-300 md:text-xs">
