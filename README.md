@@ -10,9 +10,11 @@ Responsive gym website built with **React** and **Tailwind CSS**.
 - Navbar (responsive, hamburger on mobile)
 - Hero section
 - Stats section
+- Programs section
+- Trainers details section
 
 ## Coming soon
-- Programs, Trainers, Pricing, Contact, Footer
+-Pricing, Contact, Footer
 
 ## Tech
 React (Vite) · Tailwind CSS · Lucide React
