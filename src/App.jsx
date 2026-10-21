@@ -4,6 +4,7 @@ import Hero from "./components/First/hero";
 import Stats from "./components/First/Stats";
 import Programs from "./components/second/Programs";
 import Trainer from "./components/second/Trainers";
+import Pricing from "./components/second/Pricing";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Stats />
       <Programs />
       <Trainer />
+      <Pricing />
     </div>
   );
 };
