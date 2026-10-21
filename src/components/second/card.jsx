@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowLeftRight } from "lucide-react";
+import { Check, ArrowUpRight } from "lucide-react";
 
 const Card = ({ image, title, subtitle, href = "#" }) => {
   return (
@@ -59,5 +59,76 @@ const TrainerCard = ({ image, name, speciality }) => {
   );
 };
 
-export { TrainerCard };
+const PricingCard = ({
+  name,
+  tagline,
+  price,
+  features,
+  cta,
+  popular,
+  selected,
+  onSelect,
+}) => {
+  return (
+    <div
+      onClick={onSelect}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") onSelect();
+      }}
+      className={`flex cursor-pointer flex-col rounded-2xl border bg-[#141418] p-5 transition duration-300 hover:-translate-y-1 md:p-6 ${
+        selected
+          ? "border-[#C6FF3D] shadow-[0_0_40px_rgba(198,255,61,0.15)]"
+          : "border-[#2E2E34] hover:border-[#C6FF3D]/40 hover:shadow-lg hover:shadow-black/50"
+      }`}
+    >
+      <div className="flex items-center justify-between">
+        <h3 className="font-display text-3xl uppercase text-white">{name}</h3>
+        {popular && (
+          <span className="rounded bg-[#C6FF3D] px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-black">
+            Most popular
+          </span>
+        )}
+      </div>
+
+      <p className="mt-1 text-sm text-zinc-400">{tagline}</p>
+
+      <p className="mt-5 flex items-end gap-2">
+        <span className="font-display text-6xl leading-none text-white">
+          ${price}
+        </span>
+        <span className="pb-1 text-xs text-zinc-400">/ month</span>
+      </p>
+
+      <ul className="mt-6 flex flex-col gap-3">
+        {features.map((f) => (
+          <li key={f} className="flex items-start gap-3 text-sm text-zinc-300">
+            <Check size={16} className="mt-0.5 shrink-0 text-[#C6FF3D]" />
+            {f}
+          </li>
+        ))}
+      </ul>
+
+      <div className="mt-auto pt-8">
+        <a
+          href="#contact"
+          className={`group flex items-center justify-between rounded-xl px-5 py-4 text-sm font-semibold transition duration-300 ${
+            selected
+              ? "bg-[#C6FF3D] text-black hover:brightness-110"
+              : "border border-[#2E2E34] bg-[#1A1A1D] text-white hover:border-[#C6FF3D]"
+          }`}
+        >
+          {cta}
+          <ArrowUpRight
+            size={16}
+            className="transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+          />
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export { TrainerCard, PricingCard };
 export default Card;
