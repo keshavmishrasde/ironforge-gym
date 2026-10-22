@@ -1,21 +1,16 @@
 # 🏋️ IronForge Gym
 
 Responsive gym website built with **React** and **Tailwind CSS**.
+it is a single page website of a gym with different section such as:-
+- Home
+- Programs
+- Trainers
+- Pricing
+- Contact
 
-🚧 **Status: In progress**
+🚧 **Status: completed**
 
 🔗 **Live demo:** https://ironforgegym7.netlify.app/
-
-## Done
-- Navbar (responsive, hamburger on mobile)
-- Hero section
-- Stats section
-- Programs section
-- Trainers details section
-- Pricing section
-
-## Coming soon
- -Contact
 
 ## Tech
 React (Vite) · Tailwind CSS · Lucide React
