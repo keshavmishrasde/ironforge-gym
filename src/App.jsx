@@ -5,6 +5,7 @@ import Stats from "./components/First/Stats";
 import Programs from "./components/second/Programs";
 import Trainer from "./components/second/Trainers";
 import Pricing from "./components/second/Pricing";
+import Contact from "./components/second/Contact";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Programs />
       <Trainer />
       <Pricing />
+      <Contact />
     </div>
   );
 };

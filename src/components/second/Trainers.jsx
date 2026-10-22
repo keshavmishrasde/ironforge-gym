@@ -36,7 +36,7 @@ const Trainers = () => {
       </div>
       <div
         onScroll={handleScroll}
-        className="flex snap-x snap-mandatory gap-4 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-2 md:overflow-visible lg:grid-cols-4 lg:gap-6"
+        className="flex snap-x snap-mandatory gap-4 overflow-x-auto [scrollbar-none] [&::-webkit-scrollbar]:hidden md:grid md:grid-cols-2 md:overflow-visible lg:grid-cols-4 lg:gap-6"
       >
         <TrainerCard
           image={Marcus}
